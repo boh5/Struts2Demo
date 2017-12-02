@@ -13,6 +13,7 @@
     <title><s:text name="errorPage"/></title>
 </head>
 <body>
-<s:text name="failTip"/>
+<s:text name="failTip"/><br/>
+${requestScope.tip}
 </body>
 </html>

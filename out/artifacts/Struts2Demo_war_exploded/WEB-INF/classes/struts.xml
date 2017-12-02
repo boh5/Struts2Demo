@@ -8,7 +8,11 @@
     <constant name="struts.custom.i18n.resources" value="mess"/>
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
     <constant name="struts.devMode" value="true"/>
-    <package name="crazyit" namespace="/" extends="struts-default">
+    <package name="dill" namespace="/" extends="struts-default">
+        <action name="*Action" class="com.dill.action.LoginRegistAction" method="{1}">
+            <result name="success">/WEB-INF/content/welcome.jsp</result>
+            <result name="error">/WEB-INF/content/error.jsp</result>
+        </action>
         <action name="login" class="com.dill.action.LoginAction">
             <result name="error">/WEB-INF/content/error.jsp</result>
             <result name="success">/WEB-INF/content/welcome.jsp</result>

@@ -13,8 +13,11 @@
     <title><s:text name="succPage"/></title>
 </head>
 <body>
-<s:text name="succTip">
-    <s:param>${sessionScope.user}</s:param>
-</s:text>
+<%--<s:text name="succTip">--%>
+    <%--<s:param>${sessionScope.user}</s:param>--%>
+<%--</s:text>--%>
+本站访问次数为：${applicationScope.counter}<br/>
+${sessionScope.user}，您已经成功登录！<br/>
+${requestScope.tip}
 </body>
 </html>
